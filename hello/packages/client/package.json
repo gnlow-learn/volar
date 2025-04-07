@@ -1,0 +1,29 @@
+{
+  "name": "vscode-hello",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "activationEvents": [
+    "onLanguage:hello"
+  ],
+  "description": "",
+  "main": "./src/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "hello",
+        "extensions": [
+          ".hello"
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "@types/vscode": "^1.98.0",
+    "@volar/language-server": "^2.4.12",
+    "@volar/vscode": "^2.4.12",
+    "server": "link:..\\server",
+    "vscode-languageclient": "^9.0.1"
+  }
+}
